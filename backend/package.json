@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "verify:v1.2": "node scripts/verifyV12Contracts.js",
+    "seed:demo": "node scripts/seedDemoAccounts.js",
+    "search:indexes": "node scripts/setupAtlasSearchIndexes.js",
+    "search:backfill": "node scripts/backfillWorkoutEmbeddings.js",
+    "verify:search": "node scripts/verifySearchImplementation.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
